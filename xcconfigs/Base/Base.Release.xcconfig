@@ -1,0 +1,22 @@
+//
+//  Base.Release.xcconfig
+//  DemoProject
+//
+//  Created by Dmitry Arbuzov on 05.03.2020.
+//  Copyright © 2020 dm. All rights reserved.
+//
+
+#include "Base.xcconfig"
+
+// Build Options
+VALIDATE_PRODUCT = YES
+
+// Apple Clang - Preprocessing
+ENABLE_NS_ASSERTIONS = NO
+
+// Static Analyzer
+RUN_CLANG_STATIC_ANALYZER = YES
+
+// Swift Compiler
+SWIFT_COMPILATION_MODE = wholemodule
+SWIFT_OPTIMIZATION_LEVEL = -O

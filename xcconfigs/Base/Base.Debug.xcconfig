@@ -1,0 +1,27 @@
+//
+//  Base.Debug.xcconfig
+//  DemoProject
+//
+//  Created by Dmitry Arbuzov on 05.03.2020.
+//  Copyright © 2020 dm. All rights reserved.
+//
+
+#include "Base.xcconfig"
+
+// Achitectures
+ONLY_ACTIVE_ARCH = YES
+
+// Build Options
+DEBUG_INFORMATION_FORMAT[sdk=iphonesimulator*] = dwarf
+ENABLE_TESTABILITY = YES
+
+// Apple Clang - Code Generation
+GCC_OPTIMIZATION_LEVEL = 0
+
+// Apple Clang - Preprocessing
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) DEBUG=1
+
+// Swift Compiler
+SWIFT_COMPILATION_MODE = singlefile
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
